@@ -1,11 +1,13 @@
-# Simple volume meter
+#dBmeter
 
-I whipped this app up to show a basic volume meter on live audio input.  It does both clip detection and RMS volume.
+Leny avait eu l'idée d'un programme qui nous dirait de nous taire quand un certain niveau sonore serait atteint.
+Le code source vient de https://github.com/cwilso/volume-meter/
+J'ai juste ajouté quelques lignes aux fichiers main.js et index.html...
+Vous allez sûrement hurler en voyant ce que j'ai fait. Tant pis !
 
-A "volume" meter can mean many things; if you want to do clip detection, you really need to access every sample.  If you don't need clip detection, I might suggest using an Analyser and getByteTimeDomainData, since it will likely have lower CPU overhead.  Note that it is CRITICALLY IMPORTANT to disassociate visual rendering (in the requestAnimationFrame loop) from the onaudioprocess function - you do NOT want to trigger a relayout from inside your audio handler, or it may glitch or cause other issues.
 
-It's also hosted at https://webaudiodemos.appspot.com/volume-meter/.
 
-Check it out, feel free to fork, submit pull requests, etc.  MIT-Licensed - party on.
+Vous voulez ajouter qqch ? Même si c'est juste un background en jaune ?
+Libre à vous ! C'est l'occasion de s'entraîner sur un petit projet en groupe, chacun rajoutant ses quelques lignes.
 
--Chris
+Michael
